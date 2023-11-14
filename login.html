@@ -1,0 +1,33 @@
+<DOCTYPE html>
+<html>
+
+<script type = "text/javascript">
+function validateForm(){
+	let x = document.forms["login_action"]["username"].value;
+	if (x==""){
+	alert("Please enter username.");
+	return flase;
+	}
+	let y = document.forms["login_action"]["password"].value;
+	if (y==""){
+	alert("Please enter password.");
+	return false;
+	}
+}
+
+<head>
+	<Title>Login Page</Title>
+<head>
+
+</script>
+<body>
+<h1>Enter login information below.
+<form action = "login_action", method = "POST">
+Username:
+<input type = "text" name = "username">
+<br>
+Password:
+<input type = "text" name = "password">
+<br>
+<input type = "submit" name = "Submit"/>
+</form>
